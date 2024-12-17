@@ -3290,6 +3290,19 @@ input, select, textarea {
     overflow: hidden; /* Ensures content doesn't overflow */
 }
 
+
+
+@media screen and (max-width: 980px) {
+
+	.video-container {
+		height: 70vh; /* Full viewport height */
+	}
+
+}
+
+
+
+
 .background-video {
     position: absolute;
     top: 50%;
@@ -3449,7 +3462,7 @@ h1 {
 				visibility: hidden;
 			}
 
-		#intro.hidden {
+		/* #intro.hidden {
 			pointer-events: none;
 			-moz-transform: translateY(2rem);
 			-webkit-transform: translateY(2rem);
@@ -3461,7 +3474,7 @@ h1 {
 			transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
 			opacity: 0;
 			visibility: hidden;
-		}
+		} */
 
 			#intro.hidden + #header .logo {
 				-moz-transform: translateY(0);
@@ -3491,8 +3504,8 @@ h1 {
 		@media screen and (max-width: 980px) {
 
 			#intro {
-				padding: 4rem 4rem 2rem 4rem ;
-				min-height: 50vh;
+				padding: 4rem 4rem 2rem 4rem!important ;
+				min-height: 60vh;
 			}
 
 				#intro p br {
@@ -3973,7 +3986,7 @@ h1 {
 		@media screen and (max-width: 736px) {
 
 			#main > * {
-				padding: 2rem 2rem 0.1rem 2rem ;
+				padding: 4rem 2rem 2rem 2rem ;
 			}
 
 		}
@@ -4742,7 +4755,13 @@ h1 {
 		font-style: normal!important;
 		padding-top: 1em;
 	}
-
+	#about {
+		font-size: 2.5em;
+		text-align: center;
+		padding-top: 1em;
+		background-color: #18191d;
+		color: #fff;
+	  }
 /* Skills Section */
 #skills {
 	font-size: 2.5em;
@@ -4954,3 +4973,50 @@ h1 {
 	color: #e7b53c;
   }
 
+  .headshot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0 20px 0; /* Add space around the photo */
+}
+
+.headshot-img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%; /* Optional: Makes the image circular */
+    object-fit: cover;
+}
+/* Scroll to Top Button */
+.scroll-to-top {
+    display: none; /* Initially hidden */
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 50px;
+    height: 50px;
+    background-color: #e7b53c; /* Gold color matching your theme */
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color: #18191d;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth animation */
+    z-index: 1000;
+}
+
+.scroll-to-top.visible {
+    display: flex; /* Make it visible */
+    justify-content: center;
+    align-items: center;
+    transform: translateY(0); /* Slide into view */
+    opacity: 1; /* Fully visible */
+}
+
+.scroll-to-top:hover {
+    background-color: #c99629; /* Slightly darker on hover */
+    transform: translateY(0) scale(1.1); /* Scale up slightly on hover */
+}
