@@ -5020,3 +5020,23 @@ h1 {
     background-color: #c99629; /* Slightly darker on hover */
     transform: translateY(0) scale(1.1); /* Scale up slightly on hover */
 }
+
+
+@media (max-width: 966px) {
+	#intro h1 {
+		font-size: 4rem;
+	}
+  }
+
+
+  @media (max-width: 796px) {
+	#intro h1 {
+		font-size: 3.5rem;
+	}
+  }
+
+  @media (max-width: 444px) {
+	#intro h1 {
+		font-size: 3rem;
+	}
+  }
