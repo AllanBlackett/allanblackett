@@ -1842,7 +1842,7 @@ section[id] {
 @media only screen and (min-width: 0rem) {
   #projects-604 {
       padding: var(--sectionPadding);
-      padding-top: 1em;  
+      /* padding-top: 1em;   */
   }
   #projects-604 .cs-container {
       width: 100%;
