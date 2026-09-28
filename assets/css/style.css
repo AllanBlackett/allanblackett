@@ -2095,11 +2095,12 @@ section[id] {
    for your own image. The section colours below flipped from dark cards on a
    flat #1a1a1a background to white cards sitting on top of this image. */
 #skills-529 {
-    background-image: url('https://swd.nyc3.cdn.digitaloceanspaces.com/Allan%20Blackett/Image%20/contact4.jpg');
+    /* background-image: url('https://swd.nyc3.cdn.digitaloceanspaces.com/Allan%20Blackett/Image%20/contact4.jpg'); */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #1a1a1a;
 }
 
 /* Mobile - 360px */
