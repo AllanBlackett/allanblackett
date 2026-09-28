@@ -2095,7 +2095,7 @@ section[id] {
    for your own image. The section colours below flipped from dark cards on a
    flat #1a1a1a background to white cards sitting on top of this image. */
 #skills-529 {
-    background-image: url('../images/Home/img/ctabanner1.jpg');
+    background-image: url('https://swd.nyc3.cdn.digitaloceanspaces.com/Allan%20Blackett/Image%20/contact4.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -2269,9 +2269,14 @@ section[id] {
 
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
+    /* CHANGED: was repeat(3, 1fr) when there were three skill cards.
+       Now two columns, capped and centred so the cards do not stretch
+       across the full 80rem container. */
     #skills-529 .cs-card-group {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 60rem;
+        margin: 0 auto;
+        gap: 2rem;
     }
     #skills-529 .cs-h3 {
         /* reserves 2 lines so the dividers line up across all three columns */
